@@ -1,0 +1,15 @@
+<div *ngIf="(reparto$ | async) as reparto">
+    <mat-card class="card">
+        <mat-card-title>{{ reparto.empresa_encargada }}</mat-card-title>
+        <b><mat-card-subtitle> {{ reparto.patente_vehiculo }}</mat-card-subtitle></b>
+        <mat-card-content>
+            <p><strong>Carga:</strong> {{ reparto.cantidad_bultos }}</p>
+            <p><strong>Fecha de Salida :</strong> {{ reparto.fecha_salida }} </p>
+            <p><strong>Estado:</strong> {{reparto.estado_entrega}} </p>
+
+        </mat-card-content>
+        <mat-card-actions>
+            <button mat-button (click)="cerrarDialogo()"  color="accent" cdkFocusInitial>Cerrar</button>
+        </mat-card-actions>
+    </mat-card>
+</div>

@@ -1,0 +1,12 @@
+.example-spacer {
+    flex: 1 1 auto;
+  }
+  
+  .totalexit:hover {
+    color: #3f51b5;
+  }
+  
+  .totalexit {
+    cursor: pointer;
+  }
+  

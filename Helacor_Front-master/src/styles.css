@@ -1,0 +1,120 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+img {
+  width: 65px;
+    height: 45px;
+    margin-top: 10px;
+    margin-left: 25px;
+  }
+
+.texto-menu{
+  font: 400 calc(14px * 0.83)/20px Roboto, "Helvetica Neue", sans-serif;
+}
+
+.contenedor{
+height: 100%;
+  }
+.titulo{
+    margin: 30px 10%;
+    text-transform: uppercase;
+}
+
+table {
+  width: 100%;
+}
+
+.container{
+  margin: 0 10%;
+  position: sticky;
+}
+
+
+
+.mat-form-field {
+font-size: 14px;
+width: 100%;
+}
+
+.delete{
+cursor: pointer;
+color: rgb(255, 0, 51);
+}
+
+.edit{
+cursor: pointer;
+color: rgb(255, 186, 13);
+}
+
+
+/*MAIN*/
+.view{
+cursor: pointer;
+color: rgb(33, 72, 146);
+}
+section {
+display: table;
+float: right;
+}
+.button-row {
+display: table-cell;
+width: 100%;
+}
+.button-row .mat-button-base {
+margin: 20px 8px 10px 0px;
+}
+
+.card{
+  margin-top: 15px;
+  text-align: center;
+}
+
+.spacer {
+  flex: 1 1 auto;
+}
+
+.sidenav-content {
+  display: flex;
+  height: calc(100vh - 128px);
+  align-items: center;
+  justify-content: center;
+}
+
+.zindex2{
+  position: relative;
+  z-index: 2;
+}
+
+.text-white{
+  color: white;
+}
+
+.sidenav {
+  background-color: #3f51b5;
+  color: white;
+}
+
+.active{
+  background-color:#1a214b;
+}
+
+.sidenav-item{
+  color: white;
+  font-size:20px;
+  margin: 15px;
+}
+
+md-icon{
+  color: white;
+}
+
+.mat-drawer{
+  min-width: 1vw;
+}
+
+.button-pointer{
+  cursor: pointer;
+  margin-right: 10px;
+}

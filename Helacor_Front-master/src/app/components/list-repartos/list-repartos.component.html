@@ -1,0 +1,47 @@
+<div class="titulo">
+    <h2>Repartos</h2>
+</div>
+
+<div class="container">
+
+    <mat-table [dataSource]="dataSource" class="mat-elevation-z1" matSort>
+
+      <ng-container matColumnDef="id" >
+        <mat-header-cell *matHeaderCellDef mat-sort-header="id"> ID  </mat-header-cell>
+        <mat-cell mat-cell *matCellDef="let element"> {{element.id}} </mat-cell>
+      </ng-container>   
+        <ng-container matColumnDef="empresa_encargada" >
+          <mat-header-cell *matHeaderCellDef mat-sort-header="empresa_encargada"> EMPRESA ENCARGADA  </mat-header-cell>
+          <mat-cell mat-cell *matCellDef="let element"> {{element.empresa_encargada}} </mat-cell>
+        </ng-container>    
+
+        <ng-container matColumnDef="patente_vehiculo">
+          <mat-header-cell *matHeaderCellDef mat-sort-header="patente_vehiculo"> PATENTE VEHICULO  </mat-header-cell>
+          <mat-cell mat-cell *matCellDef="let element"> {{element.patente_vehiculo}} </mat-cell>
+        </ng-container>  
+
+        <ng-container matColumnDef="cantidad_bultos" >
+          <mat-header-cell *matHeaderCellDef mat-sort-header="cantidad_bultos"> CANTIDAD BULTOS  </mat-header-cell>
+          <mat-cell mat-cell *matCellDef="let element"> {{element.cantidad_bultos}} </mat-cell>
+        </ng-container>
+
+        <ng-container matColumnDef="fecha_salida" >
+          <mat-header-cell *matHeaderCellDef mat-sort-header="fecha_salida"> FECHA SALIDA  </mat-header-cell>
+          <mat-cell mat-cell *matCellDef="let element"> {{element.fecha_salida}} </mat-cell>
+        </ng-container>
+
+        <ng-container matColumnDef="estado_entrega" >
+          <mat-header-cell *matHeaderCellDef mat-sort-header="estado_entrega"> ESTADO ENTREGA  </mat-header-cell>
+          <mat-cell mat-cell *matCellDef="let element"> {{element.estado_entrega}} </mat-cell>
+        </ng-container>
+        <ng-container matColumnDef="acciones" >
+          <th mat-header-cell *matHeaderCellDef > </th>
+          <td mat-cell *matCellDef="let element"> 
+            <mat-icon aria-hidden="false" aria-label="Ver" (click)="viewReparto(element.id)" matTooltip="Ver Detalles"  class="view" fontIcon="search"></mat-icon>  
+          </td>
+        </ng-container>
+        <mat-header-row  mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row >
+          <mat-row  *matRowDef="let row; columns: displayedColumns;"></mat-row >
+      </mat-table>
+</div>
+
